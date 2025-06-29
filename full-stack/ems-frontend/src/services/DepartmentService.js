@@ -1,28 +1,28 @@
 import axios from 'axios'
 
-const DEPARTMENT_REST_API_BASE_URL='http://localhost:8080/api/departments'
-export const getAllDepartments=()=>{
-    return axios.get(DEPARTMENT_REST_API_BASE_URL);
+const TEACHER_REST_API_BASE_URL='http://localhost:8080/api/teachers'
+export const getAllTeachers=()=>{
+    return axios.get(TEACHER_REST_API_BASE_URL);
 
 }
 
-export const createDepartment=(department)=>{
-    return axios.post(DEPARTMENT_REST_API_BASE_URL,department);
+export const createTeacher=(teacher)=>{
+    return axios.post(TEACHER_REST_API_BASE_URL,teacher);
 
 }
 
-export const getDepartmentById=(departmentId)=>{
-    return axios.get(DEPARTMENT_REST_API_BASE_URL+ '/'+departmentId);
+export const getTeacherById=(teacherId)=>{
+    return axios.get(TEACHER_REST_API_BASE_URL+ '/'+teacherId);
 
 }
 
 
-export const updateDepartment=(departmentId,department)=>{
-    return axios.put(DEPARTMENT_REST_API_BASE_URL+ '/' + departmentId,department);
+export const updateTeacher=(teacherId,teacher)=>{
+    return axios.put(TEACHER_REST_API_BASE_URL+ '/' + teacherId,teacher);
 
 }
 
-export const deleteDepartment=(departmentId)=>{
-    return axios.delete(DEPARTMENT_REST_API_BASE_URL+ '/' + departmentId);
+export const deleteTeacher=(teacherId)=>{
+    return axios.delete(TEACHER_REST_API_BASE_URL+ '/' + teacherId);
 
 }
